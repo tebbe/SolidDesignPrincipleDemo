@@ -29,7 +29,6 @@ namespace SolidDesignPrincipleDemo
             //OCP End
             Console.WriteLine("\n**********************************\n");
 
-
             //LSP
             //Violate LSP
             AppleLSP appleLSP = new OrangeLSP();
