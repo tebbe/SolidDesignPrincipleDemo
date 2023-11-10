@@ -1,0 +1,89 @@
+#What is Responsibility?
+
+Ans:An application can have many functionalities (features). 
+For example, suppose you are developing an e-commerce application. In that case, 
+that application may have many features or functionalities such as 
+
+1.Registering users
+2.Providing login functionality
+3.Displaying the product list
+4.Allowing the user to place an order,etc. 
+
+You can consider these functionalities or features as responsibilities. 
+
+*********************************************************************
+
+#Single Responsibility Principle in C#:
+
+Def:A class should have one, and only one, reason to change.
+
+(That means a class should not mixed with multiple responsibilities. 
+ So, each class should be designed to perform a specific task only.)
+ 
+*********************************************************************
+
+#Open-Closed Principle in C#:
+
+Def:Software entities, such as modules, classes, functions, etc., 
+should be open for Extension but closed for Modification.
+
+1.Open for Extension: We must design the software modules/classes/functions so that the new responsibilities or
+  functionalities can be added easily when new requirements come. 
+2.Closed for Modification: We should not modify the class/module/function until we find some bugs.
+
+#Implementation Guidelines for (OCP) using C#:
+
+The easiest way to implement the Open-Closed Principle in C# is to add new functionalities by
+creating new derived classes, which should be inherited from the original base class.
+Another way is to allow the client to access the original class with an abstract interface. 
+
+
+#Problems of Not Following the Open-Closed Principle in C#: 
+
+So, if you are not following the Open-Closed Principle during the application development 
+process, then you may end up with your application development with the following problems.
+
+1.If you allow a class or function to add new logic, then as a developer, you need to test 
+  the entire functionalities, including the old and new functionalities of the application.
+2.As a developer, it is also your responsibility to tell the QA (Quality Assurance) team about 
+  the changes in advance so that they can prepare themselves for regression testing along with 
+  the new feature testing.
+3.If you are not following the Open-Closed Principle, it also breaks the SRP, as the class 
+  or module will perform multiple responsibilities.
+4.If you are implementing all the functionalities in a single class, then the maintenance of 
+  the class becomes very difficult.
+
+*********************************************************************
+
+#Liskov Substitution Principle in C#:
+
+Def:The object of a derived class should be able to replace an object of the base class
+    without bringing any errors in the system or modifying the behavior of the base class.
+
+(That means child class objects should be able to replace parent class objects without 
+affecting the behavior).
+
+*********************************************************************
+
+#Interface Segregation Principle in C#:
+
+Def:Clients should not be forced to implement any methods they don’t use.
+
+Let us break down the above definition into two parts.
+
+1.No class should be forced to implement any method(s) of an interface they don’t use.
+2.Instead of creating large or, you can say, fat interfaces, create multiple smaller
+  interfaces with the aim that the clients should only think about the methods that are of 
+  interest to them.
+
+
+*********************************************************************
+
+#Dependency Inversion Principle in C#:
+
+Def:High-Level Modules/Classes should not depend on Low-Level Modules/Classes. 
+    Both should depend upon Abstractions. 
+    Secondly, Abstractions should not depend upon Details.Details should depend upon Abstractions.
+
+(While developing real-time applications is always to keep the High-level and
+Low-level modules as loosely coupled as possible.)
