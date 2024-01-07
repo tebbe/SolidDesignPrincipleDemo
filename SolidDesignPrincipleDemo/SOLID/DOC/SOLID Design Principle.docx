@@ -13,7 +13,7 @@ You can consider these functionalities or features as responsibilities.
 
 *********************************************************************
 
-#Single Responsibility Principle in C#:
+#Single Responsibility Principle in C#:(Invoice with Email  Loggin)
 
 Def:A class should have one, and only one, reason to change.
 
@@ -22,7 +22,7 @@ Def:A class should have one, and only one, reason to change.
  
 *********************************************************************
 
-#Open-Closed Principle in C#:
+#Open-Closed Principle in C#:(Invoice Type Discount)
 
 Def:Software entities, such as modules, classes, functions, etc., 
 should be open for Extension but closed for Modification.
@@ -31,14 +31,15 @@ should be open for Extension but closed for Modification.
   functionalities can be added easily when new requirements come. 
 2.Closed for Modification: We should not modify the class/module/function until we find some bugs.
 
-#Implementation Guidelines for (OCP) using C#:
+#Implementation Guidelines for (OCP) using C#:(Invoice class with email and logging)
 
-The easiest way to implement the Open-Closed Principle in C# is to add new functionalities by
-creating new derived classes, which should be inherited from the original base class.
-Another way is to allow the client to access the original class with an abstract interface. 
+The easiest way to implement the Open-Closed Principle in C# is to add 
+new functionalities by creating new derived classes, which should be inherited from 
+the original base class.Another way is to allow the client to access the original 
+class with an abstract interface. 
 
 
-#Problems of Not Following the Open-Closed Principle in C#: 
+#Problems of Not Following the Open-Closed Principle in C#: (Invoie Discount calculation)
 
 So, if you are not following the Open-Closed Principle during the application development 
 process, then you may end up with your application development with the following problems.
@@ -55,7 +56,7 @@ process, then you may end up with your application development with the followin
 
 *********************************************************************
 
-#Liskov Substitution Principle in C#:
+#Liskov Substitution Principle in C#:(Apple/Orange)
 
 Def:The object of a derived class should be able to replace an object of the base class
     without bringing any errors in the system or modifying the behavior of the base class.
@@ -65,7 +66,7 @@ affecting the behavior).
 
 *********************************************************************
 
-#Interface Segregation Principle in C#:
+#Interface Segregation Principle in C#:(Printer)
 
 Def:Clients should not be forced to implement any methods they don’t use.
 
@@ -79,7 +80,7 @@ Let us break down the above definition into two parts.
 
 *********************************************************************
 
-#Dependency Inversion Principle in C#:
+#Dependency Inversion Principle in C#:(Employee Salary Calculation)
 
 Def:High-Level Modules/Classes should not depend on Low-Level Modules/Classes. 
     Both should depend upon Abstractions. 
